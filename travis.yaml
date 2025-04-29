@@ -20,6 +20,6 @@ script:
     -docker run -e CI=true bdimmler/react-test npm test
 deploy:
   provider: script
-  script: bash ./deploy
+  script: bash ./deploy.sh
   on:
    branch: master
